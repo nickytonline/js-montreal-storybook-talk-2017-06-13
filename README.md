@@ -14,3 +14,4 @@ Note: Thanks to the [Spectacle](https://github.com/FormidableLabs/spectacle) pro
 * run `npm i` or `yarn`, if you haven't already.
 * run `npm run workbench` or `yarn run workbench`.
 * open a browser and hit [http://localhost:9001](http://localhost:9001), and you are ready to roll.
+* workbench available [here](https://deploy-workbench-jcvxcptsmh.now.sh)
