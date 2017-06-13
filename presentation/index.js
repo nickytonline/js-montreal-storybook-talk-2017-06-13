@@ -29,7 +29,7 @@ const images = {
   storybook: require("./assets/storybook-loaded.png"),
   storybookDemo: require("./assets/react_storybook_demo.gif"),
   problems: require("./assets/first_world_problems.png"),
-  surprise: require("./assets/surprise.png")
+  awwyeah: "http://i.imgur.com/QONVIyz.gif"
 };
 
 preloader(images);
@@ -91,6 +91,7 @@ const Presentation = () => {
             <ListItem>Set up React Storybook</ListItem>
             <ListItem>Configure React Storybook</ListItem>
             <ListItem>React Storybook Alternatives</ListItem>
+            <ListItem>Questions?</ListItem>
           </List>
         </Slide>
 
@@ -117,7 +118,7 @@ const Presentation = () => {
           <List>
             <ListItem>Lack of use cases</ListItem>
             <ListItem>Slow development</ListItem>
-            <ListItem>Dirtiness</ListItem>
+            <ListItem>Potential to build components poorly</ListItem>
           </List>
         </Slide>
 
@@ -142,17 +143,12 @@ const Presentation = () => {
 
         <Slide bgColor="primary">
           <Heading size={1} caps lineHeight={1}>
-            Demo Time
+            <Link href="https://deploy-workbench-jcvxcptsmh.now.sh/" target="_blank">Demo Time</Link>
           </Heading>
-          <Text size={1} fit lineHeight={1}>
-            <Link href="http://localhost:9001" target="storybook">
-              http://localhost:9001
-            </Link>
-          </Text>
         </Slide>
 
         <Slide bgColor="primary">
-          <Heading>Key benefits</Heading>
+          <Heading>Key Benefits</Heading>
           <List>
             <ListItem>Isolation</ListItem>
             <ListItem>Props mocking</ListItem>
@@ -162,23 +158,18 @@ const Presentation = () => {
         </Slide>
 
         <Slide bgColor="primary">
-          <Heading>Plus</Heading>
+          <Heading>Key Benefits (cont.)</Heading>
           <List>
             <ListItem>Extensible via Storybook Add-ons</ListItem>
             <ListItem>Customizable, e.g. support *.tsx (TypeScript)</ListItem>
             <ListItem>Runs anywhere</ListItem>
-            <ListItem>
-              Showcase your components (<Link
-                href="https://github.io"
-                target="storybook"
-              >
-                github.io
-              </Link>,
-              <Link href="https://storybooks.io" target="storybook">
-                storybooks.io
-              </Link>...)
-            </ListItem>
+            <ListItem>Showcase your components</ListItem>
             <ListItem>Supports React Native</ListItem>
+            <ListItem>
+              <Link href="https://github.com/storybooks/storybook/issues/1262" target="_blank">
+                Proposed
+              </Link> vue.js support
+            </ListItem>
           </List>
         </Slide>
 
@@ -274,7 +265,7 @@ storiesOf('SimpleComponent', module)
           <CodePane>npm run workbench</CodePane>
           <br />
           <Text>
-            and open a browser at
+            and open a browser at&nbsp;
             <Link href="http://localhost:9001" target="storybook">
               http://localhost:9001
             </Link>
@@ -300,22 +291,22 @@ storiesOf('SimpleComponent', module)
         </Slide>
 
         <Slide bgColor="primary">
-          <Image height={300} src={images.surprise} />
+          <Image height={300} src={images.awwyeah} />
         </Slide>
 
         <Slide bgColor="primary">
           <Heading size={1} caps lineHeight={1}>
-            Alternative tools
+            Alternative Tools
           </Heading>
           <br />
           <Text>
-            UI Harness
+            UI Harness&nbsp;
             <Link href="http://www.uiharness.com" target="_blank">
               www.uiharness.com
             </Link>
           </Text>
           <Text>
-            Carte Blanche
+            Carte Blanche&nbsp;
             <Link
               href="https://github.com/carteb/carte-blanche"
               target="_blank"
@@ -324,11 +315,21 @@ storiesOf('SimpleComponent', module)
             </Link>
           </Text>
           <Text>
-            BlueKit
+            BlueKit&nbsp;
             <Link href="http://bluekit.blueberry.io" target="_blank">
               bluekit.blueberry.io
             </Link>
           </Text>
+        </Slide>
+
+        <Slide bgColor="primary">
+          <Heading caps>
+            Examples of Storybook Use
+          </Heading>
+          <List>
+            <ListItem><Link href="http://airbnb.io/react-dates" target="_blank">airbnb.io/react-dates</Link></ListItem>
+            <ListItem><Link href="https://storybook.js.org/examples" target="_blank">Other examples</Link></ListItem>
+          </List>
         </Slide>
 
         <Slide bgColor="primary">
@@ -358,27 +359,6 @@ storiesOf('SimpleComponent', module)
               </Link>
             </ListItem>
           </List>
-        </Slide>
-
-        <Slide>
-          <Heading caps lineHeight={1}>
-            Recap
-          </Heading>
-          <List>
-            <ListItem>What is React Storybook?</ListItem>
-            <ListItem>A demo of React Storybook</ListItem>
-            <ListItem>Set up React Storybook</ListItem>
-            <ListItem>Configure React Storybook</ListItem>
-            <ListItem>React Storybook Alternatives</ListItem>
-          </List>
-        </Slide>
-
-        <Slide bgColor="primary">
-          <Heading fit caps lineHeight={1}>
-            An image my co-worker wanted to see
-          </Heading>
-          <br />
-          <img src="http://i.imgur.com/QONVIyz.gif" />
         </Slide>
 
         <Slide bgColor="primary">
