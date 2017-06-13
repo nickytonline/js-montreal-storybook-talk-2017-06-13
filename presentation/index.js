@@ -79,13 +79,6 @@ const Presentation = () => {
               @nickytonline
             </Link>
           </Text>
-          <br />
-          <Text>
-            Slides/Repo available at&nbsp;
-            <Link href="http://story.iamdeveloper.com" target="_blank">
-              story.iamdeveloper.com
-            </Link>
-          </Text>
         </Slide>
 
         <Slide>
@@ -171,8 +164,8 @@ const Presentation = () => {
         <Slide bgColor="primary">
           <Heading>Plus</Heading>
           <List>
-            <ListItem>Extensions</ListItem>
-            <ListItem>Customizable</ListItem>
+            <ListItem>Extensible via Storybook Add-ons</ListItem>
+            <ListItem>Customizable, e.g. support *.tsx (TypeScript)</ListItem>
             <ListItem>Runs anywhere</ListItem>
             <ListItem>
               Showcase your components (<Link
@@ -345,19 +338,6 @@ storiesOf('SimpleComponent', module)
         </Slide>
 
         <Slide bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1}>
-            Some Reasons
-          </Heading>
-          <List>
-            <ListItem>
-              Customize configuration, e.g. support *.tsx (TypeScript)
-            </ListItem>
-            <ListItem>Great documentation</ListItem>
-            <ListItem>Extensible</ListItem>
-          </List>
-        </Slide>
-
-        <Slide bgColor="primary">
           <Heading caps>
             Thanks OSS
           </Heading>
@@ -372,9 +352,9 @@ storiesOf('SimpleComponent', module)
               </Link>
             </ListItem>
             <ListItem>
-              The Kadira team&nbsp;
-              <Link href="https://github.com/kadirahq" target="_blank">
-                github.com/kadirahq
+              React Storybook&nbsp;
+              <Link href="https://storybook.js.org" target="_blank">
+                storybook.js.org
               </Link>
             </ListItem>
             <ListItem>
@@ -401,7 +381,7 @@ storiesOf('SimpleComponent', module)
 
         <Slide bgColor="primary">
           <Heading fit caps lineHeight={1}>
-            A meme my co-worker wanted to see
+            An image my co-worker wanted to see
           </Heading>
           <br />
           <img src="http://i.imgur.com/QONVIyz.gif" />
@@ -410,6 +390,13 @@ storiesOf('SimpleComponent', module)
         <Slide bgColor="primary">
           <Heading size={1} fit caps lineHeight={1}>
             Questions?
+          </Heading>
+        </Slide>
+
+        <Slide bgColor="primary">
+          <Heading size={1} fit caps lineHeight={1}>
+            Slides/Repo can be found at <br />
+            <Link href="http://story.iamdeveloper.com" target="_blank">story.iamdeveloper.com</Link>
           </Heading>
         </Slide>
 
