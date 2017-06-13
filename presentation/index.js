@@ -332,12 +332,6 @@ storiesOf('SimpleComponent', module)
         </Slide>
 
         <Slide bgColor="primary">
-          <Heading size={1} fit caps lineHeight={1}>
-            Why Chose Storybook?
-          </Heading>
-        </Slide>
-
-        <Slide bgColor="primary">
           <Heading caps>
             Thanks OSS
           </Heading>
