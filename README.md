@@ -1,7 +1,7 @@
 # JS Montreal - An Introduction to React Storybook
 A talk on [React Storybook](https://github.com/kadirahq/react-storybook).
 
-Slide available here, [react-storybook.now.sh](https://reactstorybook.now.sh)
+Slide available here, [reactstorybook.now.sh](https://reactstorybook.now.sh)
 
 # To View The Slide Deck Locally
 * run `npm i` or `yarn`.
