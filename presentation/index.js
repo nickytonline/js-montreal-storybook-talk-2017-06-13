@@ -51,7 +51,7 @@ const Presentation = () => {
           <Heading>Who am I?</Heading>
           <br />
           <Text>
-            SDE for McAfee working on TrueKey<br />
+            SDE for McAfee working on True Key<br />
             a.k.a just a dev
           </Text>
         </Slide>
