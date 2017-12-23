@@ -8,7 +8,7 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx .",
     "deploy": "npm run clean & npm run build && surge -p .",
-    "start": "cross-env NODE_ENV=development node server.js",
+    "start": "cross-env y bNODE_ENV=development node server.js",
     "workbench": "start-storybook -p 9001",
     "workbench:build": "build-storybook -c .storybook -o .workbench"
   },
