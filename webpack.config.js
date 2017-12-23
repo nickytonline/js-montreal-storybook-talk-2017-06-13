@@ -1,17 +1,21 @@
-/* eslint-disable */
-
-var path = require("path");
-var webpack = require("webpack");
+const path = require("path");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   devtool: "source-map",
   entry: ["webpack-hot-middleware/client", "babel-polyfill", "./index"],
   output: {
     path: path.join(__dirname, "dist"),
-    filename: "bundle.js",
-    publicPath: "/dist/"
+    filename: "bundle.js"
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      hash: true,
+      filename: 'index.html',
+      inject: 'body'
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ],

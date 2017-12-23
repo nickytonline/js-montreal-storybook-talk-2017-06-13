@@ -1,16 +1,21 @@
 /* eslint-disable */
-
-var path = require("path");
-var webpack = require("webpack");
+const path = require("path");
+const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: ["babel-polyfill", "./index"],
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/dist/"
   },
   plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      hash: true,
+      filename: 'index.html',
+      inject: 'body'
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
       "process.env": {

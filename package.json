@@ -4,11 +4,9 @@
   "description": "JS Montreal - An Introduction to React Storybook, June 13th, 2017",
   "main": "lib/index.js",
   "scripts": {
-    "clean": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx .",
-    "deploy": "npm run clean & npm run build && surge -p .",
-    "start": "cross-env y bNODE_ENV=development node server.js",
+    "start": "cross-env NODE_ENV=development node server.js",
     "workbench": "start-storybook -p 9001",
     "workbench:build": "build-storybook -c .storybook -o .workbench"
   },
@@ -44,6 +42,7 @@
     "express": "4.13.3",
     "file-loader": "0.8.4",
     "html-loader": "0.4.0",
+    "html-webpack-plugin": "2.30.1",
     "is-buffer": "1.1.1",
     "markdown-loader": "0.1.7",
     "node-libs-browser": "0.5.3",
