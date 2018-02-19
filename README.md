@@ -1,4 +1,6 @@
 # JS Montreal - An Introduction to React Storybook
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/nickytonline/js-montreal-storybook-talk-2017-06-13.svg)](https://greenkeeper.io/)
 A talk on [React Storybook](https://github.com/kadirahq/react-storybook).
 
 The slides are available at [storybookslides.iamdeveloper.com](https://storybookslides.iamdeveloper.com).
