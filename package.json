@@ -16,7 +16,7 @@
     "normalize.css": "3.0.3",
     "react": "15.2.1",
     "react-dom": "15.2.1",
-    "spectacle": "1.0.8"
+    "spectacle": "2.1.0"
   },
   "peerDependencies": {
     "react": "15.2.1",
