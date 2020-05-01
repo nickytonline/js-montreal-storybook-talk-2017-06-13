@@ -8,7 +8,9 @@
     "lint": "eslint --ext .js,.jsx .",
     "start": "cross-env NODE_ENV=development node server.js",
     "workbench": "start-storybook -p 9001",
-    "workbench:build": "build-storybook -c .storybook -o .workbench"
+    "workbench:build": "build-storybook -c .storybook -o .workbench",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "MIT",
@@ -16,7 +18,8 @@
     "normalize.css": "3.0.3",
     "react": "15.2.1",
     "react-dom": "15.2.1",
-    "spectacle": "1.0.8"
+    "spectacle": "1.0.8",
+    "snyk": "^1.316.1"
   },
   "peerDependencies": {
     "react": "15.2.1",
@@ -55,5 +58,6 @@
     "webpack": "1.12.8",
     "webpack-dev-middleware": "1.2.0",
     "webpack-hot-middleware": "2.5.0"
-  }
+  },
+  "snyk": true
 }
